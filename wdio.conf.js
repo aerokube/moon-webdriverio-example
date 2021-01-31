@@ -2,7 +2,7 @@ exports.config = {
     runner: 'local',
     hostname: 'localhost',
     port: 4444,
-    path: '/wd/hub',
+    path: '/wd/hub', //Change this to '/mobile' when using mobileDevice capability
     specs: [
         'tests/**/*js'
     ],
@@ -13,6 +13,7 @@ exports.config = {
         browserVersion: '88.0',
         "moon:options": {
             "enableVNC": true,
+            "sessionTimeout": "5m",
 			"mobileDevice": {
 				"deviceName": "Apple iPhone 11",
 				"orientation": "landscape"

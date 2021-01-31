@@ -5,6 +5,6 @@ describe('DuckDuckGo page', function () {
         await browser.url('https://duckduckgo.com/');
         const title = await browser.getTitle();
         browser.saveScreenshot('screenshot.png');
-        assert.equal(title, 'DuckDuckGo — Privacy, simplified.');
+        assert.strictEqual(title, 'DuckDuckGo — Privacy, simplified.');
     });
 });
