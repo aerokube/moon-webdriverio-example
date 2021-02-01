@@ -13,6 +13,7 @@ exports.config = {
         browserVersion: '88.0',
         "moon:options": {
             "enableVNC": true,
+            "enableVideo": true,
             "sessionTimeout": "5m",
 			"mobileDevice": {
 				"deviceName": "Apple iPhone 11",
@@ -26,6 +27,6 @@ exports.config = {
     reporters: ['dot','spec'],
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 300000
     }
 };
